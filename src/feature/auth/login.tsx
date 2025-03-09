@@ -34,7 +34,7 @@ export default function LoginForm() {
   return (
     <div className="flex items-center justify-center min-h-screen">
       <Card className="w-full max-w-md mx-auto shadow-md">
-        <CardContent className="pt-6 pb-10">
+        <CardContent className="pt-6 pb-10 ">
           <div className="flex flex-col items-center mb-6">
             <div className="flex items-center justify-center gap-3 mb-2">
               <Image

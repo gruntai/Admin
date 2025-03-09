@@ -1,4 +1,4 @@
-import Overview from "@/example/example.features/overview";
+import Overview from "@/feature/overview";
 import React from "react";
 
 function OverviewPage() {
