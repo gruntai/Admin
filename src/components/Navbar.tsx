@@ -5,8 +5,10 @@ import { Bell, Link, Menu, PlayCircle, Search, Trash2 } from "lucide-react";
 import { Switch } from "./ui/switch";
 import Image from "next/image";
 import { Input } from "./ui/input";
+import { useRouter } from "next/navigation";
 
 function Navbar() {
+  const router = useRouter();
   const [checked, setChecked] = React.useState(true);
   return (
     <nav className="bg-white fixed left-0 top-0 z-40 w-full lg:pl-72 flex items-center justify-between px-5 py-3 pt-5 border-b border-[#E5E7EB] ">
@@ -43,6 +45,9 @@ function Navbar() {
           <Button
             // variant={"outline"}
             className="border rounded-[10px] flex items-center gap-2 bg-[#F3F4F6] hover:bg-[#eff0f2]"
+            onClick={() => {
+              router.push("/login");
+            }}
           >
             <Bell className="w-5 h-5 text-black" color="black" />
             <span className="text-black-heading">End Session </span>
